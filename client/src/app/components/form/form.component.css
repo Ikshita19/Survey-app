@@ -1,0 +1,37 @@
+.bg {
+   
+    height: 100%;
+  
+  margin: 30px;
+  
+    color: white; 
+    border-radius: 10px;
+    padding-top:20px;
+    background-color: #130f40;
+}
+
+  .heading{
+
+    font-size: x-large;
+    font-family:'Calibri';
+        font-display: centre;
+
+
+  }
+
+  .add  {
+    background: none;
+    color : #ffffff;
+    border: none;
+  }
+
+  .submit{
+    background-color: #dff9fb;
+    color : #130f40;
+    border :none ;
+}
+  input {
+    width :80%;
+  }
+
+

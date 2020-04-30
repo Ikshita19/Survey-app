@@ -1,0 +1,15 @@
+#btns{
+    display : flex !important;
+    flex-direction: row;
+    justify-content: space-around !important;
+}
+
+.btn{
+    background-color: #dff9fb;
+    color : #130f40;
+    border :none ;
+}
+
+nav{
+    background-color: #130f40 !important;
+}
