@@ -1,0 +1,45 @@
+<div class="bg">
+  <div class="container">
+
+    <h1 label="arial" class="heading">Survey Form</h1>
+
+
+
+
+
+
+    <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+
+
+        <br>
+
+        <label for="Question">Question Text Here:</label>
+
+        <input type="text" class="form-control" id="question_text" placeholder="Type Survey Question Here "
+          formControlName="question_text" required />
+
+
+        <div formArrayName="optionscount" *ngFor="let optioncount in optionscount.controls;let i =index">
+          <input type="number" class="form-control my-1" placeholder="Set option count" [formControlName]="i">
+        </div>
+
+
+        <br>
+        <div class="option">
+
+          <label for="Options">Options:</label>
+          <div formArrayName="options" *ngFor="let option of options.controls;let i=index">
+            <input type="text" class="form-control my-1" placeholder="Option" [formControlName]="i" required>
+
+
+          </div>
+          <span> <button type="button" class="add btn-lg m-1" (click)="addoptions()"> <i class="fa fa-plus-circle"
+                aria-hidden="true"></i></button></span>
+        </div>
+
+
+      </div>
+      <button class="btn submit btn-success">Submit</button>
+    </form>
+    <br><br>
